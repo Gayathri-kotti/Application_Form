@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Application Form</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        body {
+            background-color: rgb(90, 138, 84);
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1><b>Application Form</b></h1><br><br>
+        <form action="insert.php" method="POST">
+            <table>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><b>Password</b></td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><b>Gender</b></td>
+                    <td>
+                        <input type="radio" name="gender" value="m" required>Male
+                        <input type="radio" name="gender" value="f" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><b>Phone no</b></td>
+                    <td>
+                        <select name="phoneCode" required>
+                            <option selected hidden value="">Select Code</option>
+                            <option value="+91">+91</option>
+                            <option value="+1">+1</option>
+                            <option value="+44">+44</option>
+                            <option value="+52">+52</option>
+                            <option value="+86">+86</option>
+                            <option value="+93">+93</option>
+                        </select>
+                        <input type="phone" name="phone" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit" name="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
